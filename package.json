@@ -8,7 +8,7 @@
     "dev": "nodemon server.js",
     "build": "webpack --mode production",
     "dev-server": "webpack serve --mode development",
-    "start-dev": "concurrently \"npm:dev\" \"npm:dev-server\""
+    "start-dev": "npm run build && node server.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
